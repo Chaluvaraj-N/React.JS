@@ -1,0 +1,53 @@
+Module 1
+
+things you know
+-------------------
+1. HTML(hypertext Markup Language) :- basic structure : HTML builds the skeleton of web pages by using tags to define elements like text, images, and links.
+
+2. CSS(Cascading Syle Sheets) :- Design and Style : CSS controls how web pages look, allowing you to change colors, fonts, and layouts to make the site altractive.
+
+3. JS(javascript) :- interactive features : JS makes web pages interactive, letting users do things like click buttons, fill out forms, and see changes without refreshing the page. 
+
+
+
+What is React js
+-------------------
+1. react js is an open-source js library developed and maintained by facebook
+2. it's widely used for building user interfaces, especially for single page applications and complex web interfaces.
+3. it breaks down a whole website into small, manageable pieces called components
+4. it enables developers to create dynamic, responsive, and reusable UI compnents, enchancing the efficiency of the development process
+
+
+
+why React js
+--------------
+1. speed :- react uses of the virtual DOm aloows for efficient updates and rendering, resulting in faster and more responsive user interfaces
+2. reusability :- React allows components based approach where the component can be reusable this leads to cleaner code, easier maintenance, and better collaboration among team members
+3. job market :- it has high demand! companies like netflix, AirBnd, instagram etc.
+4. Rich Ecosystem And Tooling :- react is supported by a vast ecosysytem of libraries, tools and frameworks that enhance its capabilities and help developers build robust applications more efficiently
+
+
+About js
+---------- 
+1. it is a js library developed by FB in 2011, it has been released in 2013
+2. it has been invented by jordon walke.
+3. angular js and Vue js are the competitor for react
+4. it has component-based architectur. where the component can be reusable which helps in maintaining and organizing the code efficiency
+5. react uses a virtual DOM to optimize rendering, which improves performance
+6. unidirectional data flow. it means data flows in a single direction, form parent components to child components 
+
+
+
+Most Popular technology skills in the JS tech Stack
+------------------------------------------------------
+1. react
+2. node
+3. typescript
+4. angular
+5. ES6
+
+current version of React JS is :- 19.2
+--------------------------------
+
+which lang is using in React JS :- JSX
+---------------------------------
