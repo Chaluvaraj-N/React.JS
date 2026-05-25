@@ -49,5 +49,32 @@ Most Popular technology skills in the JS tech Stack
 current version of React JS is :- 19.2
 --------------------------------
 
-which lang is using in React JS :- .JSX
+which language is using in React JS :- .JSX
 ---------------------------------
+
+Single page Application(SPA)
+------------------------------
+a SPA in react is a web application where the entire website loads only once in the browser. after that, different pages or content are updated dynamically without refreshing the whole page.
+
+
+what is the purpose of react js
+---------------------------------
+1. react is used to create user interface
+2. react is used to create single page appliaction with other libraries.
+3. using react we can create static and dynamic webpage
+
+
+can we create entire frontend application using react?
+--------------------------------------------------------
+to create frontend application with react?
+-----> UI + other libraraies (axios, hooks, react router, dom, react icons, redux)
+
+
+Advantages of react JS
+-----------------------
+1. react us easy to learn and use
+2. react learning curve is very small
+3. react application are very fast in performance
+4. in react we have virtual dom
+5. the react has component based architecture
+6. react community is larger
