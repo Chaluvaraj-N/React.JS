@@ -78,3 +78,174 @@ Advantages of react JS
 4. in react we have virtual dom
 5. the react has component based architecture
 6. react community is larger
+
+
+Working of React Application
+-----------------------------
+
+
+
+
+user interaction                   no server is sent to server          
+     client ------------------------------------------------------------------------> server
+1. if we want to navigate from one page to another page in react the application will not send any request to server.
+2. the page will not refreshing in react. without refreshing it will navigate from one page to another page.
+3. we will get request from react and react only take care of all request.
+4. it is also called as single page application.
+5. because it has the concept called virtual dom. lets see dom interaction.
+
+
+what is DOM?
+-------------
+1. dom(document object model) is a tree like structure that represents your HTML elements in the browser.
+<div>
+    <h1>hello world</h1>
+    <button>click me</button>
+</div>
+
+2. this becomes DOM tree like
+
+
+what is the virtual DOM?
+-------------------------
+1. The virtual DOM is a copy of the real DOM kept in memory by react.
+2. it's a JS object that mirrors the structure of  the real DOM. but doesn't touch the screen immediately.
+react never updates the DOM directly: instead it
+-------------------------------------------------
+1. creates a virtual version of the UI
+
+
+
+why is this important?
+-----------------------
+updating the real DOM is slow because
+1. it involves recalculating styles, layouts and reflows
+2. the entire page may be re-rendered unnecessarily.
+
+react's virtual DOM makes updates faster and smoother by
+----------------------------------------------------------
+react creates a virtual dom in memory :- instead of a manipulating the browers's dom directly, React creates a virtual dom in memory
+
+
+
+// DAY 02
+//! Difference between ANGULAR AND REACT :
+
+//-                      ANGULAR                               REACT
+
+//   AUTHOR            |   Google                           |   Facebook
+//   Developer         |   Mishko Hevery                    |   Jordan Walke
+//   Latest Version    |   Angular 16.0.3 may 23 -2023      |   React 19.0.0 2025
+//   Language          |   JS,HTML                          |  JSX
+//   Rendering         |   Client side                      |   server side
+//   Data-binding      |   Bi-directional                   |   uni-directiona
+//   DOM               |   Regulat DOM                      |   Virtual DOM
+//   App Architecture  |   MVC (model,view,control)         |   Flux
+//   Routing           |   It required a template or        |   It doesn't handle routing , but
+//                     |   controller to its router         |   has a lot of module for routing
+//                     |  configuration , which has to      |  ex: react -router
+//                     |   be managed manually              |
+
+
+//-            React.js                                      React Native
+
+//      Released in 2013                              |  released in 2015
+//      used to develop web application               |  develop mobile applications
+//      can execute on all platform                   |  it is not platform independent, (take more effort to execute on all platform)
+//      it use js library and css for animantions     |  it comes with build-in animation libraries
+//      it use react router to navigate web page      |  has build-in navigation library for navigating mobile application
+//      use HTML tags                                 |  It doesn't use HTML tags
+//      provide security                              |  low compare to react.js 
+
+
+//! Working of React application
+
+//:                      HTTP REQUEST
+//-   |------------- |  ------------->   |----------|
+//-   |   CLINET     |                   |  SERVER  |
+//-   |------------- |  <------------    |----------|
+// :                     HTTP RESPONSE
+
+// Html file will 
+// be downloaded in 
+//  browser
+
+//:                    no req send to server
+//-   |-------------|  ------------->   | 
+//-   |  CLINET     |                   |  SERVER
+//-   |-------------|  <------------    |  
+//+  www.facebook.com                 
+
+// If we want to navigate from one page to another page in react the application will not send ant req to server
+// The page will not refresh in react. without refreshing it will navigate from one page to another page
+// we will get request from react and react to only take care of all request
+// It is also called as single page application
+// Because it has concept called virtual DOM      
+
+
+//? what is DOM ?
+// DOM(document Object Model) is a tree like structure that represent your html element in browser
+//:  <div>
+//:  <h1> hello </h1>
+//:  <button> click here </button>
+//:  </div>
+
+//!  This become DOM tree
+//*    div
+//*     |--- h1
+//*     |---- button
+
+// ChANging or updating
+
+
+
+//? What is virtual DOM ?
+// The virtual DOM is a copy of real DOM kept in m/m by react.
+// it's a js object that mirrors that structure of the real DOM .but doesn't touch the screen immeditely
+
+// + REACT never updates the DOM directly : instead it
+// create a virtual version of UI
+// Update the virtual version when state or prope changes
+// Compares it with the previous version
+// finds what changed
+// Efficientely updates only those are changed
+
+
+// ? WHEN  is virtual dom used?
+
+//:  client  ---->  virtual dom ----->  Original dom
+
+//  everytime when something changed in your application 
+//  re-renders the components to create a new virtual DOM to find what changes 
+//  Calculate the minimum no. of changes required
+// applies those changes to the real DOM
+
+
+//? WHY IS THIS IMP?
+//  UPDATING THE REAL DOM IS SLOW because
+//  It involve recalculation styles, layout and reflows
+//  The entire page may be re-rendered unnecessarily
+
+//? React's virtual DOM makes update fast and smoother by
+//  avoiding unnecessary work
+//  Making dom updates batched and optimized 
+
+// *             VIRTUAL DOM                                       ORIGINAL DOM
+
+//-                  |                                                   | 
+//-              DOCUMENT                                            DOCUMENT
+//-                  |                                                   |
+//-                 HTML                                                HTML
+//-                  |                                                   |
+//-          ----------------                                     ---------------
+//-          |       |       |                                    |      |       |
+//-          H1    BUTTON   H2                                   H1    BUTTON    H2
+
+
+//? React created=d a virtual DOM
+// Instead of a manipulating the browser DOM directly, react creates a virtual DOM in m/m. 
+// Where it does all the necessary manipulating before the changes in the browser DOM.
+
+//? React changes only what need to change in original DOM
+// When user want to change anything it will reflect in virtual dom .
+// The virtual DOM will update the changes which is need in original dom.
