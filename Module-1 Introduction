@@ -127,44 +127,43 @@ react's virtual DOM makes updates faster and smoother by
 react creates a virtual dom in memory :- instead of a manipulating the browers's dom directly, React creates a virtual dom in memory
 
 
+Difference between ANGULAR AND REACT :
+---------------------------------------
+                            ANGULAR                               REACT
 
-// DAY 02
-//! Difference between ANGULAR AND REACT :
-
-//-                      ANGULAR                               REACT
-
-//   AUTHOR            |   Google                           |   Facebook
-//   Developer         |   Mishko Hevery                    |   Jordan Walke
-//   Latest Version    |   Angular 16.0.3 may 23 -2023      |   React 19.0.0 2025
-//   Language          |   JS,HTML                          |  JSX
-//   Rendering         |   Client side                      |   server side
-//   Data-binding      |   Bi-directional                   |   uni-directiona
-//   DOM               |   Regulat DOM                      |   Virtual DOM
-//   App Architecture  |   MVC (model,view,control)         |   Flux
-//   Routing           |   It required a template or        |   It doesn't handle routing , but
-//                     |   controller to its router         |   has a lot of module for routing
-//                     |  configuration , which has to      |  ex: react -router
-//                     |   be managed manually              |
+     AUTHOR            |   Google                           |   Facebook
+     Developer         |   Mishko Hevery                    |   Jordan Walke
+     Latest Version    |   Angular 16.0.3 may 23 -2023      |   React 19.0.0 2025
+     Language          |   JS,HTML                          |  JSX
+     Rendering         |   Client side                      |   server side
+     Data-binding      |   Bi-directional                   |   uni-directiona
+     DOM               |   Regulat DOM                      |   Virtual DOM
+     App Architecture  |   MVC (model,view,control)         |   Flux
+     Routing           |   It required a template or        |   It doesn't handle routing , but
+                       |   controller to its router         |   has a lot of module for routing
+                       |  configuration , which has to      |  ex: react -router
+                       |   be managed manually              |
 
 
-//-            React.js                                      React Native
+              React.js                                      React Native
 
-//      Released in 2013                              |  released in 2015
-//      used to develop web application               |  develop mobile applications
-//      can execute on all platform                   |  it is not platform independent, (take more effort to execute on all platform)
-//      it use js library and css for animantions     |  it comes with build-in animation libraries
-//      it use react router to navigate web page      |  has build-in navigation library for navigating mobile application
-//      use HTML tags                                 |  It doesn't use HTML tags
-//      provide security                              |  low compare to react.js 
+        Released in 2013                              |  released in 2015
+        used to develop web application               |  develop mobile applications
+        can execute on all platform                   |  it is not platform independent, (take more effort to execute on all  platform)
+        it use js library and css for animantions     |  it comes with build-in animation libraries
+        it use react router to navigate web page      |  has build-in navigation library for navigating mobile application
+        use HTML tags                                 |  It doesn't use HTML tags
+        provide security                              |  low compare to react.js 
 
 
-//! Working of React application
+   Working of React application
+   ----------------------------
 
-//:                      HTTP REQUEST
-//-   |------------- |  ------------->   |----------|
-//-   |   CLINET     |                   |  SERVER  |
-//-   |------------- |  <------------    |----------|
-// :                     HTTP RESPONSE
+                      HTTP REQUEST
+      |------------- |  ------------->   |----------|
+      |   CLINET     |                   |  SERVER  |
+      |------------- |  <------------    |----------|
+                        HTTP RESPONSE
 
 // Html file will 
 // be downloaded in 
@@ -249,3 +248,54 @@ react creates a virtual dom in memory :- instead of a manipulating the browers's
 //? React changes only what need to change in original DOM
 // When user want to change anything it will reflect in virtual dom .
 // The virtual DOM will update the changes which is need in original dom.
+
+
+Features of react js
+----------------------
+1. JSX :- javascript XML is asyntax extension for js used in react. it allows you to write HTML-like code in your javascript components.
+
+2. performace :- react js is known to be a great performer, 
+this features makes it much better then other frameworks out ther today. the reason behind this is that it manages a virtual DOM.
+
+3. simplicity :- react js uses jsx which makes the application simple and to code as well as undestand.
+we know that react js is a component based approach which makes the code resuable as yours need.
+
+4. virtual DOM :- A virtual Dom is a copy of original dom. whenewver any modification happen in the web application the entire UI is rerenderes in virtual dom representation.
+then it checks the difference b/w dom representation and new dom only it updates if it needed
+
+5. one-way data binding :- react js is designed in such a manner that follows unidirectional data flow or one way data binding.
+the benefits of one way data binding give you better control throughout the application.
+
+6. components :- React js is all about components. React.js application is made up of multiple components and each components has its own logic and controls. these components can be reusable.
+
+
+why react is used to create UI when we can create UI using html and js??
+-------------------------------------------------------------------------
+1. HTML :- 
+ui----> html----> pre defined element
+using html creating ui is very easy.
+to create ui html is providing some html elements and tags.
+
+drawbacks
+----------
+we can't reuse the Ui and time consuming to create ul.
+
+2. javascript :-
+ui------> javascript---------->predefined function------------>dom element------------>dom------------->screen
+javascript we can create ui dynamically.
+we can re-use UI.
+
+drawbacks
+----------
+creating ui is very complex process and time consuming.
+
+3. react js :-
+ui------>react------>predefined function------------>react element------------>dom------------->screen
+
+
+__________________________|___________________________________________|___________________________________________
+|html                     |     javascript                            |    react js                              |
+|_________________________|___________________________________________|__________________________________________|
+|creating the UI is easy  |      we can reuse the ui                  |    creating ui is very easy like html    |
+|we cannot resue the ui   |      creating the ui is complex process   |    we can reuse the Ui like js           |
+|_________________________|___________________________________________|__________________________________________|
