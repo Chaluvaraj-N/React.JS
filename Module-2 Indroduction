@@ -1,0 +1,21 @@
+Jsx (javascript xml)
+
+what is jsx?
+-------------
+-It is a syntax extension for javascript commonly used in react.
+-It looks similar to html. But it allows you to write like elements directly with in javascript.
+-jsx is not valid javascript but it's transformed into regular javascript by tools/compiler like babel before being executed by the browser.
+-let see the example :-  let element=<h1>Welcome to React js</h1> 
+
+what is babel complier?
+-----------------------
+-Babel is a javascript compiler(also called a transpiler) that helps you write modern JS(ES6+)
+
+Babel is essential for react because:
+-react uses JSX (HTML inside Js), which browsers don't understand.
+-Babel converts JSX into regular JS (e.g.,React.createElement).
+
+Rules to write JSx?
+--------------------
+-JSX codes should be always written in lower case.
+-JSX must return a single parent element.
