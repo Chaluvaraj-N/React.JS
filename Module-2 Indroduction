@@ -19,3 +19,24 @@ Rules to write JSx?
 --------------------
 -JSX codes should be always written in lower case.
 -JSX must return a single parent element.
+(when div is using there is no error)  and (when div is not using there is error).
+-The parent should be one for the all the elements such as <div>,<section>,<main>.
+-we can enclose the jsx code inside the react fragment <React.Fragment></React.Fragment> or </>. to avoid extra div error.
+-React fragment provides a way to group multiple react elements without adding extra nodes to the DOM. they allow you to return multiple elements from a component's render method without needing to wrap them in a single parent element.
+
+what is React Fragment?
+------------------------
+-React fragment provides a way to group multiple react elements without adding extra nodes to the DOM. 
+-they allow you to return multiple elements from a component's render method without needing to wrap them in a single parent element.
+
+syntax of react fragment
+
+<>
+    {/* multiple elements here */}
+</>
+
+or
+
+<React.Fragment>
+  {/* multiple elements here */
+</React.Fragment>}
