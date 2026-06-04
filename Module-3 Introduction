@@ -1,0 +1,37 @@
+Module-3 components of react
+
+what ara components?
+---------------------
+1. Components are reusable pieces of UI. instead of writing everything in one file, we break the UI into small, manageable parts.
+2. Components are reusable and they different properties in each components.
+
+why components? [header, sidebar, Main Content, Footer]
+---------------
+1. reusablity
+2. better organization
+3. easy to maintain
+4. scalabilty 
+
+Advantage of React Component?
+------------------------------
+1. Reusability: You can create a component once and reuse it in multiple places, which saves time and effort.
+2. Maintainability: Components are self-contained, making it easier to manage and update specific parts of the UI without affecting the entire application.
+3. Separation of Concerns: Components allow you to separate different concerns of your application, such as presentation and logic, making it easier to understand and maintain.
+4. Better PErformanance with Virtual DOM: React uses a virtual DOM to optimize rendering, which can improve performance by minimizing direct manipulation of the actual DOM.
+5. Composition: Components can be composed together to create complex UIs, allowing for a modular and flexible design approach.
+6. Easy to Debug and Understand: With a clear structure and separation of concerns, components can be easier to debug and understand, especially for larger applications.
+7. Community and Ecosystem: React has a large and active community, which means there are many resources, libraries, and tools available to help you build your applications efficiently.
+8. Cross-platform Development: React Native allows you to use React components to build mobile applications for both iOS and Android, providing a consistent development experience across platforms.
+
+Types of React Components
+--------------------------
+1. Functional Components :- 
+---------------------------
+* class components are ES6 classes that extend the react,component class.
+* they define a render() method to return JSX, along with additional features like state and lifecycle methods.
+
+2. Class Components :-
+------------------------
+* functional components are simpler and are defined as JavaScript functions that return JSX.
+* they can use hooks to manage state and side effects, making them more powerful and easier to work with than class components.
+

@@ -1,6 +1,6 @@
 import React from 'react'
 import cars from '../assets/hero.png'
-function Example4() {
+function Ex4() {
     let direction="rtl"
     let direction2="ltr"
     let title="Chennai super kings"
@@ -29,4 +29,4 @@ let width="200px"
   )
 }
 
-export default Example4
+export default Ex4

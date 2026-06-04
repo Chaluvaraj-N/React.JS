@@ -40,3 +40,7 @@ or
 <React.Fragment>
   {/* multiple elements here */
 </React.Fragment>}
+
+.jsx supports comments in react
+.jsx Attributes can accept javascript expressions.
+import react from 'react'

@@ -1,0 +1,39 @@
+Module 1 :- introduction to react
+----------------------------------
+1. Pre-requirements
+2. what is react JS
+3. why react JS
+4. About of react JS
+5. Single page application
+6. purpose of react JS
+7. Can we build entire frontend application using react
+8. Advantage of React JS
+9. Diff b/w Angular Js and React JS
+10. Diff React Js and React Native
+11. Working of react application
+12. Virtual DOM and Original DOM
+13. Redicilation process diff algorithm
+14. Installtion
+     pre-requirements
+     1. node Js
+     2. VS code
+     3. Browser
+    
+    comments
+    1. npm create vite@latest
+    2. npm run dev
+    3. to stop server :- ctrl + c
+
+
+Module 2 :- JSX
+----------------
+1. JSX
+2. Babel complier (converting JSX to JS)
+3. Rules to write JSX
+4. CSS in JSX
+5. JS in JSX
+6. WHy JSX
+7. Projects
+
+Module 3 :- Components in React
+--------------------------------

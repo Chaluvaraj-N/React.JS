@@ -1,17 +1,25 @@
 import React from 'react'
-
-function Example3() {
+import car from '../assets/car.jpg'
+const Example3 = () => {
+  let a=20
+  let b=30
+  let fun=()=>alert("hello how are you")
   return (
-<>
-    <header>
-        <h1>welcome to react js class</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa itaque quaerat fugit, similique sed? Dolore facilis praesentium maiores aliquam, sit laborum nisi ducimus tempore iure. Neque rem facilis eligendi?</p>
-      </header>
-      <section>
-        <h2>Section Title</h2>
-        <p>This is the content of the section. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illo corrupti nihil labore eveniet vel architecto magnam nulla perferendis! Dolore cum unde perspiciatis eligendi quas numquam, non veritatis aut reprehenderit?</p>
-      </section>
-  </>
-)
+    <div>
+      <h1 className="title"
+      id="heading">Welcome to js class</h1>
+      <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" className="avatar"/>
+      {/* <abbr title="Hypertext Markup Language">HTML</abbr> */}
+      <h3>the sum of two numbers {a+b}</h3>
+      <button onClick={fun}>Click me</button>
+    
+
+    <h1 className='title' id='heading'>Welcome to js class</h1>
+    <abbr title="Hypertext Markup Language">HTML</abbr>
+    <h3>the sum of two numbers {a+b}</h3>
+    <button onClick={fun}>Click me</button>
+    </div>
+  )
 }
+
 export default Example3
