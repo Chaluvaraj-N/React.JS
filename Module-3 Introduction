@@ -35,3 +35,20 @@ Types of React Components
 * functional components are simpler and are defined as JavaScript functions that return JSX.
 * they can use hooks to manage state and side effects, making them more powerful and easier to work with than class components.
 
+  +---------------------------------------------------+-------------------------------------------------------------------+
+  |     Functional Components                         |                            Class Components                       |
+  +---------------------------------------------------+-------------------------------------------------------------------+
+  |  1. is easy to create.                            |                       1. is complex to create.                    |
+  |  2. are fast in rendering.                        |                       2. are slower in rendering.                 |
+  |  3. we can assign any data type value to          |                       3. we should be assigned with other only    | 
+  |  4. Hooks can be used                             |                       4. Hooks cannot be used in class components.| 
+  +---------------------------------------------------+-------------------------------------------------------------------+
+
+Props intro
+-----------
+* Props stands for properties.
+* Props are used to pass data from one component to another component in react.
+* they make components:
+1. reusable
+2. dynamic
+3. configurable
