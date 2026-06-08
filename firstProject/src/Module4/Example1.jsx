@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Example1(props) {
-    const{name,age,city,isStudent}=props
+    let handleClick = () => {
   return (
     <div>
       <h1>Name: {name}</h1>

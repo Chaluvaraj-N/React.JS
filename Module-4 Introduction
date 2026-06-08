@@ -1,0 +1,82 @@
+Props and states
+-----------------
+
+what is Props?
+---------------
+* Props stand for "properties." they are ready_only components. it is an object which stores the value of attributes of a tag and work similar to the HTML attributes. 
+* Props are immutable. they cannot be changed. they are set by the parent and they are fixed throughout the lifetime of a component.
+* functional components receive props as parameters.
+* props play a crucial role in creating dynamic and reusable components by allowing them to be configured with different data based on their usage within the application.
+
+how Props work?
+----------------
+* Parent component sends data as props.
+* child component receives props as an arguement.
+* we use props.name, props.age to access the data.
+pro tip:- use meaningful names for props to make your code easier to read and understand.
+
+
+
+Prop destructuring
+------------------
+* Prop destructing in react functional compoenents is a common pattern that allows you to extract values directly from the props obejct, making your code cleaner and easier to read.
+
+
+default props
+-------------
+* default props are used to set default values for props in case they are not provided by the parent component.
+* it is useful to ensure that your component has a fallback value for props, preventing potential errors when props are missing.
+* you can define default props by assigning a default value to the props parameter in the functional component or by using the defaultProps property on the component.
+
+
+React State
+------------
+* state is used to store and manage data inside a component.
+* when state changes the ui updates automatically.
+
+why state?
+----------
+* makes components interactive and dynamic.
+* ui updates based on data chnges.
+* handles dynamic daata(forms,toggels etc).
+* improves user experience
+
+useState() hook
+----------------
+* the usestate hook is a build-in react hook that allows functional components to manage statefull data without class components.
+* it returns a pair of values: the current state and a function to update that state. usestate  enables functional components to have their own state, making them more powerful and flexible.
+
+syntax:- const [state, setState] = useState(value for variable)
+
+what is usesState()?
+--------------------
+* useState() is simple predefined js function which is coming from react library.
+* useState will return one array which contains exactly two elements i,e state and setState.
+* first elements is a state varibale and secoond element is a function(setter function)
+
+what is state?
+---------------
+* state is a special variable in react where we can store any type of data.
+
+example:- 
+let [count, setCount] = useState(0);
+let [state, setstate] = useState("john");
+let [state, setState] = useState({name: "john", age: 30});
+let [state, setState] = useState(true);
+let [state, setState] = useState([1, 2, 3]);
+
+example for useState() 
+----------------------
+import React from 'react'
+
+function UseStateDemo() {
+    const [state, setState] = useState("welcome to react Class");
+  return (
+    <div>
+      <h1>{state}</h1>
+      <button onClick={() => setState("welcome to react Class")}>Change State</button>
+    </div>
+  )
+}
+
+export default UseStateDemo;

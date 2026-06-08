@@ -8,7 +8,6 @@ function Example2({name,age,city,isStudent}) {
       <h3>City: {city}</h3>
       <h4>Is Student: {isStudent ? "Yes" : "No"}</h4>
      
-
     </div>
   )
 }
