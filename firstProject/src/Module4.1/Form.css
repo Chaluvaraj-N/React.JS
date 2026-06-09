@@ -1,0 +1,30 @@
+.formControl{
+    width: 400px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    margin: 50px auto;
+    text-align: center;
+}
+.inputControl{
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+.inputControl input{
+    height: 30px;
+}
+
+button{
+    height: 40px;
+    width: 130px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+center{
+    color: green;
+}
