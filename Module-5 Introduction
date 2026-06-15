@@ -1,0 +1,39 @@
+Event Handling 
+---------------
+* In React, handling events is very similar to handling event in regular JavaScript.
+* Event handling allows us to respond to user actions like clicks, input and form submissions
+* However, there are same syntactic differences and conventions that are important to understand.
+
+Why Event Handling?
+----------------------
+* Makes the app interactive.
+* Responds to user actions.
+* Updates state and UI.
+* Brings your app to life.
+
+How it works?
+-------------
+1 User perform an action (click or type)
+2 Event is triggered (onClick, onChange etc)
+3 Function runs and updates the state
+4 UI re-renders and shows updated data
+
+
+Event Binding Example
+----------------------
+* In React, events are written in camel Case, and you pass a function as the event handler.
+
+import React from 'react'
+
+function MyButton() {
+    let handleClick=()=>{
+        alert("Button was clicked!!!")
+    }
+    return (
+        <div>
+            <button onClick={handleClick}>Click me</button>
+        </div>
+    )
+}
+export default MyButton
+
