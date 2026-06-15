@@ -1,0 +1,54 @@
+
+Conditional Rendering
+
+
+Conditional Rendering
+• Conditional rendering allows components to display UI based 
+on conditions or state value.
+• This allows you to dynamically control what content is 
+displayed to the user based on the state of your application. 
+• This can be done using several methods, such as JavaScript's 
+conditional operators (if-else, ternary operator) or logical 
+operators like && and ||.
+using if-else statements to conditionally 
+render components.
+Using Ternary Operator To Returning a 
+variable 
+Using Logical && Operator
+• The && operator can be used when you want to render something 
+only if a condition is true.
+Project
+Password Toggle App
+• Create a React application that allows users to show and hide 
+their password using a button.
+• The application should:
+• Display a password input field 
+• Hide the password initially 
+• Show the password when the user clicks the “Show Password” 
+button 
+• Hide the password again when the user clicks “Hide Password” 
+• Change the button text dynamically based on the current state
+Login Logout Toggle App
+• Create a React application that displays different 
+components based on the login status of the user.
+• The application should:
+• Show a “Login” button initially 
+• Display the Home component when the user is logged 
+out 
+• Display the Profile component when the user logs in 
+• Change the button text from “Login” to “Logout” 
+dynamically 
+• Toggle between components using conditional rendering
+Assignment
+• Create and toggle button to show offline or online by clicking 
+on button to user profile card
+• Create login button show login/ logout when you click on 
+button and show message based on login status as if login 
+welcome user component and logout thank you user 
+component should show
+
+
+Interview Questions
+• How to write conditions in react?
+• Diff b/w && and ternary operator?
+• What is ternary operator in react?

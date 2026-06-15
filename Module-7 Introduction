@@ -1,0 +1,9 @@
+List and Keys 
+--------------
+
+Lists in React
+--------------
+* In react js lists play a crucial role in rendering  dynamic collections of elements, such as arrays of data
+* rather than manually creating each element, we can use the map() function to iterate over an array and generate a list of components
+* This allows for efficient rendering and updating of the UI when the underlying data changes
+
