@@ -1,0 +1,154 @@
+React component life-Cycle
+---------------------------
+* lifecycle refers to the different phases a component goes through from mounting to unmounting
+* every react component has a lifecycle
+* It goes through 3 main phases: Mounting, Updating, and Unmounting
+* React provides lifecycle methods that allow developers to hook into these phases and perform specific actions at each stages
+
+
+The lifecycle of the component is divided into three main phases:
+-----------------------------------------------------------------
+1. Mounting(when component is added)
+2. Updating(when component is updated)
+3. Unmounting(when component is removed)
+
+
+Lifecycle Phases Overview:
+--------------------------
+mounting: First time on screen
+1. Constructor() initialization
+2. render()
+3. componentDidMount() -(or useEffect [])
+runs once when component is added to the DOM
+
+Updating: When state/props
+1. render()
+2. componentDidUpdate() - (or useEffect [deps])
+runs when component is updated due to state or props change
+
+Unmounting: When component is removed
+1. componentWillUnmount() - (or useEffect cleanup)
+runs once when component is removed from the DOM
+
+
+Life cycle flow (class component):
+----------------------------------
++---------------------------+--------------------------------------------------+----------------------------------------------+
+|         MOUNTING          |        UPDATING (State / Props Change)           |                 UNMOUNTING                   |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+| constructor()             | componentWillReceiveProps() (Deprecated)         | componentWillUnmount()                       |
+| Initialize state          | Update state based on new props                  | Cleanup timers, listeners, subscriptions     |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+|            ↓              |                       ↓                          |                     ↓                        |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+| render()                  | shouldComponentUpdate()                          | Component is removed from the DOM            |
+| Return JSX                | Return true/false to decide re-render            |                                              |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+|            ↓              |                       ↓                          |                                              |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+| componentDidMount()       | render()                                         |                                              |
+| API calls                 | Re-render UI                                     |                                              |
+| DOM interactions          |                                                  |                                              |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+|            ↓              |                       ↓                          |                                              |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+| Runs once when component  | componentDidUpdate()                             | Runs once when component is removed          |
+| is added to the DOM       | API calls, DOM updates after changes             | from the DOM                                 |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+|                           | Runs whenever state or props change              |                                              |
++---------------------------+--------------------------------------------------+----------------------------------------------+
+
+\Example of Class React Component Life Cycle:
+---------------------------------------------
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+    console.log('Constructor: Component is being initialized');
+  }
+
+  componentDidMount() {
+    console.log('ComponentDidMount: Component has been mounted to the DOM');
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log('ComponentDidUpdate: Component has been updated');
+  }
+
+  componentWillUnmount() {
+    console.log('ComponentWillUnmount: Component is about to be removed from the DOM');
+  }
+
+  render() {
+    console.log('Render: Rendering the component');
+  return <h3>Count: {this.state.count}</h3>;
+  }
+}
+
+lifecycle Order
+----------------
+1. Constructor
+2. Render
+3. componentDidMount
+4. Render (on state/props change)
+5. componentDidUpdate
+6. componentWillUnmount (when component is removed)
+
+
+Functional Component Life Cycle (using Hooks):
+----------------------------------------------
+import {UseEffect} from 'react';
+function Example({count}) {
+  useEffect(() => {
+    console.log('ComponentDidMount: Component has been mounted to the DOM');
+    return () => {
+      console.log('ComponentWillUnmount: Component is about to be removed from the DOM');
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log('ComponentDidUpdate: Component has been updated');
+  }, [count]);
+
+  return <h3>Count: {count}</h3>;
+}
+
+
+useEffect Guide
+---------------
+1. [] -> componentDidMount (runs once when component is mounted)
+2. [deps] -> componentDidUpdate (runs when specified dependencies change)
+3. return cleanup -> componentWillUnmount (runs when component is about to be removed from the DOM)
+
+Interview Questions:
+--------------------
+What is React Lifecycle?
+
+What are the Lifecycle phases in React?
+
+What happens during the mounting phase?
+
+What is the purpose of componentDidMount()?
+
+What happens during the updating phase?
+
+What is componentDidUpdate()?
+
+What is componentWill Unmount()?
+
+How can we avoid infinite loop in componentDidUpdate()?
+
+What are the lifecycle methods in functional components?
+
+What is the order of lifecycle methods in class components?
+
+
+
+Higher Order Components (HOC)
+-----------------------------
+Higher Order Components (HOCs) are functions that take a component as an argument and return a new component. 
+These functions enhance the capabilities of the original component by adding additional props, behavior, or modifying its rendering logic.
+Purpose:
+--------
+The primary purpose of HOCs is to promote code reuse and avoid duplication by extracting shared functionality from components into reusable functions. 
+HOCs enable developers to encapsulate common patterns or behaviors and apply them to multiple components throughout the application.
