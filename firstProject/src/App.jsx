@@ -1,11 +1,14 @@
 import React from 'react'
-import Example1 from './Module7/Example1'
+import Auth from './Module7.1/Auth'
+
 function App() {
   return (
     <div>
-      <Example1/>
+      <Auth />
+      <ProfileDashboard />
     </div>
   )
 }
 
 export default App
+
