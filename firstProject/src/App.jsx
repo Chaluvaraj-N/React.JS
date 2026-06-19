@@ -1,10 +1,10 @@
 import React from 'react';
-import EnhancedComponent from './Module7.1/EnhancedComponent';
+import UseState from './Module8/UseState';
 
 function App() {
   return (
     <div>
-      <EnhancedComponent />
+      <UseState />
     </div>
   );
 }

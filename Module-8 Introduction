@@ -1,0 +1,42 @@
+React Hooks
+-----------
+* Hooks were added to react in version 16.8
+* Hooks allow function components to have state and side other react features
+
+purpose of hooks
+----------------
+The primary purpose of hooks is to enable functional components to have the same capabilities as class components without the need for complex class syntax or lifecycle methods. 
+
+React Hooks rules
+-----------------
+1. Hooks can only be called inside React function components.
+2. Hooks can only be called at the top level of a component.
+3. Hooks cannot be conditional.
+4. Don't call hooks inside loops, conditions, or nested functions.
+
+note:- In react hooks we can different types of hooks to deal with in functional components
+
+
+useState() Hook
+----------------
+* The useState hook is a built-in React hook that allows functional components to manage stateful data without using class components.
+* It returns a pair of values: the current state and a function to update that state, useState enables functional components to have their own state, making them more powerful and flexible.
+Syntax: const [state, setState] useState(value for variable)
+
+what is useState()?
+-------------------
+* useState() is simple predefined javascript function which is coming from react library.
+* useState will return one array which contains exactly two elements ie state, setState.
+* First element is a state variable and second element is a function(setter function)
+
+what is state?
+--------------
+* State is a special variable in react where we can store any type of data.
+
+Example:
+* let[state,setState]=useState(0)
+* let [state,setState]=useState("Virat")
+* let[state.setState]=useState({name:"raj",age:27})
+* let[state.setState]=useState(true)
+* let[state.setState]=useState([10,20,30,50])
+
