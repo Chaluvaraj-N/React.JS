@@ -152,3 +152,10 @@ Purpose:
 --------
 The primary purpose of HOCs is to promote code reuse and avoid duplication by extracting shared functionality from components into reusable functions. 
 HOCs enable developers to encapsulate common patterns or behaviors and apply them to multiple components throughout the application.
+
+
+Benefits of HOC
+---------------
+* reusablility:- HOCs promote code reuse by encapsulatating common functionality and applying it to multiple components throughout the application
+* separation of concerns:- HOCs allow developers to separate concerns by abstracting complex logic or side effects from the presentation layer, making components simpler and easier to maintain
+* Composition:- HOCs support compostion, enabling developers to combine multiple HOCsto create more complex behaviours or apply different layers of functionality t component

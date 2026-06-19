@@ -1,14 +1,12 @@
-import React from 'react'
-import Auth from './Module7.1/Auth'
+import React from 'react';
+import EnhancedComponent from './Module7.1/EnhancedComponent';
 
 function App() {
   return (
     <div>
-      <Auth />
-      <ProfileDashboard />
+      <EnhancedComponent />
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;
