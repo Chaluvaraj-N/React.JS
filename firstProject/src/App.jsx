@@ -1,12 +1,12 @@
-import React from 'react';
-import UseState from './Module8/UseState';
-
+import React from 'react'
+import Example3 from './Module8/Example3'
 function App() {
   return (
     <div>
-      <UseState />
+      
+      <Example3 />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

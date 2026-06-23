@@ -1,42 +1,121 @@
-React Hooks
------------
-* Hooks were added to react in version 16.8
-* Hooks allow function components to have state and side other react features
+// React Hooks
+// -----------
+// * Hooks were added to react in version 16.8
+// * Hooks allow function components to have state and side other react features
 
-purpose of hooks
-----------------
-The primary purpose of hooks is to enable functional components to have the same capabilities as class components without the need for complex class syntax or lifecycle methods. 
+// purpose of hooks
+// ----------------
+// The primary purpose of hooks is to enable functional components to have the same capabilities as class components without the need for complex class syntax or lifecycle methods. 
 
-React Hooks rules
------------------
-1. Hooks can only be called inside React function components.
-2. Hooks can only be called at the top level of a component.
-3. Hooks cannot be conditional.
-4. Don't call hooks inside loops, conditions, or nested functions.
+// React Hooks rules
+// -----------------
+// 1. Hooks can only be called inside React function components.
+// 2. Hooks can only be called at the top level of a component.
+// 3. Hooks cannot be conditional.
+// 4. Don't call hooks inside loops, conditions, or nested functions.
 
-note:- In react hooks we can different types of hooks to deal with in functional components
+// note:- In react hooks we can different types of hooks to deal with in functional components
 
 
-useState() Hook
-----------------
-* The useState hook is a built-in React hook that allows functional components to manage stateful data without using class components.
-* It returns a pair of values: the current state and a function to update that state, useState enables functional components to have their own state, making them more powerful and flexible.
-Syntax: const [state, setState] useState(value for variable)
+// 1. useState() Hook
+// ------------------
+// * The useState hook is a built-in React hook that allows functional components to manage stateful data without using class components.
+// * It returns a pair of values: the current state and a function to update that state, useState enables functional components to have their own state, making them more powerful and flexible.
+// Syntax: const [state, setState] = useState(value for variable)
 
-what is useState()?
--------------------
-* useState() is simple predefined javascript function which is coming from react library.
-* useState will return one array which contains exactly two elements ie state, setState.
-* First element is a state variable and second element is a function(setter function)
+// what is useState()?
+// -------------------
+// * useState() is simple predefined javascript function which is coming from react library.
+// * useState will return one array which contains exactly two elements ie state, setState.
+// * First element is a state variable and second element is a function(setter function)
 
-what is state?
---------------
-* State is a special variable in react where we can store any type of data.
+// what is state?
+// --------------
+// * State is a special variable in react where we can store any type of data.
 
-Example:
-* let[state,setState]=useState(0)
-* let [state,setState]=useState("Virat")
-* let[state.setState]=useState({name:"raj",age:27})
-* let[state.setState]=useState(true)
-* let[state.setState]=useState([10,20,30,50])
+// Example:
+// * let[state,setState]=useState(0)
+// * let [state,setState]=useState("Virat")
+// * let[state.setState]=useState({name:"raj",age:27})
+// * let[state.setState]=useState(true)
+// * let[state.setState]=useState([10,20,30,50])
 
+
+// 2. useEffect() Hook
+// -------------------
+// * The useEffect hook in React is a powerful tool for handling side effects in functional components.
+// * Side effects may include data fetching, DOM manipulation, subscriptions, or any other asynchronous tasks that need to be executed after rendering
+// * useEffect replaces lifecycle methods such as componentDidMount(empty dep), componentDidUpdate(with dep), and componentWillUnmount(cleanup function) in class components
+
+// Why do we need it?
+// ------------------
+
+// * Fetching data:- fetch data from API's when component mounts or when dependencies change
+// * Subscriptions: subscribe to events, sockets, or external stores and clean up on unmount.
+// * Timers:- set timeouts/intervals and clear them to avoid memory leaks.
+// * DOM Manipulation:- Interact with DOM API's (focus, scroll, measurements, etc)
+// * Local storage/Session storage:- sync state with browser storage
+
+
+// syntax
+// -------
+// useEffect (setup, dependencies?)
+// ---------------------------------
+
+// * Effect function → runs after render
+// * Cleanup function → runs before effect re-runs or component unmounts
+// * Dependency array → controls when the effect runs
+// * If omitted → runs after every render
+
+// Syntax:
+// ------
+//     useEffect (() => {
+//         //side effect code here
+//         return () => {
+//             //cleanup code here (optional)
+//         }}
+//     ), ([dependencies]);
+
+
+// Types os UseEffect
+// -------------------
+// 1. No Dependency Array
+
+//     useEffect(()=>{
+//     console.log('run after every render') })
+
+// * Runs after every render (initial + updates)
+// * Use with caution! Can cause infinite loops
+// * Render → effect(every time)
+
+// 2. Empty Dependency Array
+
+//     useEffect(()=>{
+//     console.log('run only once when component mounts')
+//     }, [])
+
+// * Runs only once after the initial render(like componentDidMount)
+// * Cleanup runs on unmount.
+// * Render(initial) → Effect(once)
+
+// 3. With Dependencies
+
+//     useEffect(()=>{
+//     console.log('run when count changes')
+//     }, [count])
+
+// * Runs after initial render and whenever count value changes.
+// * Cleanup runs before re running the effect.
+// * Render Effect(when count changes)
+
+// 4. Cleanup (Return)
+
+//     useEffect(() => {
+//     console.log("Component Mounted");
+//     return () => {
+//         console.log("Component Unmounted");
+//     };
+//     }, []);
+
+// * Runs before the effect re-runs and when the component unmounts
+// * Before re-runs/Unmount -> cleanup
