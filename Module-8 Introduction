@@ -119,3 +119,10 @@
 
 // * Runs before the effect re-runs and when the component unmounts
 // * Before re-runs/Unmount -> cleanup
+
+// Benefits:
+// ---------
+// * →Simplify Side Effects: useEffect makes it easy to perform tasks like fetching data or updating the DOM after a component renders.
+// * → Replace Lifecycle Methods: It replaces class-based lifecycle methods, making component logic easier to understand and manage.
+// * → Prevent Memory Leaks: Cleanup functions in useEffect help prevent memory leaks by cleaning up resources when the component unmounts.
+

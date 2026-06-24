@@ -1,10 +1,10 @@
 import React from 'react'
-import Example3 from './Module8/Example3'
+import User from './Module8/User'
 function App() {
   return (
     <div>
       
-      <Example3 />
+      <User/>
     </div>
   )
 }
