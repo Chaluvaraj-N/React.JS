@@ -1,10 +1,9 @@
 import React from 'react'
-import User from './Module8/User'
+import Example2 from './Module9/Example2'
 function App() {
   return (
     <div>
-      
-      <User/>
+      <Example2 />
     </div>
   )
 }

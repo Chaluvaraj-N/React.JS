@@ -1,2 +1,40 @@
 Advance Hooks
--------------
+--------------
+
+1. useRef() Hook
+----------------
+* The useRef Hook allows you to persist values between renders. Means ability to store a value within a component that remains unchanged even when the component re-renders
+* useRef is a React hook that returns a mutable ref object with a .current property.
+* It helps you store a value (or reference) that doesn't trigger re-render when it changes.
+
+Syntax:
+--------
+* Returns an object: {current: initial Value}
+* The object reference remains the same across all renders
+
+                const refContainer = useRef(initialValue);
+
+Key Points to Remember:-
+------------------------
+* useRef() does NOT trigger re-render when .current changes.
+* The ref object is mutable (you can change ref.current)
+* Ref object is stable across renders (same reference)
+* useRef is similar to an instance variable in class components.
+* Best for DOM access, storing values, timers, previous values etc.
+
+How it works?
+--------------
+* On first render, useRef (initalValue) create an object (current: initial Value)
+* On re-renders, React returns the same object.
+* That object lives for the full component life cycle
+
+First Render           Re-Render 1           Re-Render 2
+
++-------------+       +-------------+       +-------------+
+| current : 0 | ----> | current : 5 | ----> | current :10 |
+| (ref object)|       | same object |       | same object |
++-------------+       +-------------+       +-------------+
+
+only, current chnages, object remain same
+
+
