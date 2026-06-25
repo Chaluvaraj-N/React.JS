@@ -1,9 +1,9 @@
 import React from 'react'
-import Example2 from './Module9/Example2'
+import StopWatch from './Module9/StopWatch'
 function App() {
   return (
     <div>
-      <Example2 />
+      <StopWatch />
     </div>
   )
 }

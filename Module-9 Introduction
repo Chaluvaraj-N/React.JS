@@ -38,3 +38,15 @@ First Render           Re-Render 1           Re-Render 2
 only, current chnages, object remain same
 
 
+common use cases
+----------------
+* Access DOM Elements
+
+Get a reference to a DOM node and perform actions.
+
+    const inputRef=useRef (null)
+    return(
+        <input ref={inputRef}/> 
+        )
+    inputRef.current.focus()
+
