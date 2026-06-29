@@ -1,9 +1,9 @@
 import React from 'react'
-import StopWatch from './Module9/StopWatch'
+import Component1 from './Module9/UseContext/Component1'
 function App() {
   return (
     <div>
-      <StopWatch />
+      <Component1 />
     </div>
   )
 }

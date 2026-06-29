@@ -50,3 +50,45 @@ Get a reference to a DOM node and perform actions.
         )
     inputRef.current.focus()
 
+
+Difference Between useState and useRef in react
+------------------------------------------------
+
++-------------------+-------------------------+-----------------------------+
+| Feature           | useState                | useRef                      |
++-------------------+-------------------------+-----------------------------+
+| Causes Re-render  | Yes                     | No                          |
++-------------------+-------------------------+-----------------------------+
+| Stores Data       | Yes                     | Yes                         |
++-------------------+-------------------------+-----------------------------+
+| Updates UI        | Yes                     | No                          |
++-------------------+-------------------------+-----------------------------+
+| Used For          | Dynamic UI              | DOM access / storing values |
++-------------------+-------------------------+-----------------------------+
+| Value Stored In   | State                   | .current                    |
++-------------------+-------------------------+-----------------------------+
+| Performance       | Slightly slower         | Faster                      |
++-------------------+-------------------------+-----------------------------+
+
+Note:
+- useState: Use when the UI should update.
+- useRef: Use when storing a value without re-rendering.
+
+
+Prop Drilling
+--------------
+* prop drilling occurs when a prop needs to be passed through several laers of nested components to reach a deeply nested 
+child component that actually needs the props.
+
+component1 ->component2 -> component3 -> component4
+
+* Let us consider the hierarchy where the component 1 is calling component 2 and component 21s calling component 3 and 
+component 3 is calling component 4
+
+* And we have a state in component 4 and I want to send that data to component 4 then I need to pass it as a props to 
+component 2 it should accept and send data as props to component 3 and it should accept data and send data as props to 
+component 4, which will receive data as a prop and display the data.
+
+* But here unnecessary the component 2 and component 3 are accepting the props without there need, this is called as 
+prop drilling
+
