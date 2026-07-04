@@ -1,0 +1,7 @@
+React Router
+------------
+* In a single-page application (SPA), React Router is a standard library for routing in React. It enables navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
+
+* The, it allows developers to create dynamic routing in their applications, meaning that the routes can change based on the state of the application or user interactions.
+
+* It enables the creation of nested routes, which allows for more complex and hierarchical navigation structures within the application.
