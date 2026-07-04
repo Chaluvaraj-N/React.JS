@@ -1,9 +1,9 @@
 import React from 'react'
-import './External.css'
+import Example1 from './Module10.2/Example1'
 function App() {
   return (
     <div>
-      <External />
+      <Example1 />
     </div>
   )
 }
