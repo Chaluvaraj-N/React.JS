@@ -1,9 +1,12 @@
 import React from 'react'
-import Component1 from './Module9/UseContext/Component1'
+import Counter from './Module9/CustomHook/Counter'
+import Cart from './Module9/CustomHook/Cart'
 function App() {
+
   return (
-    <div>
-      <Component1 />
+    <div >
+<Counter/>
+<Cart/>
     </div>
   )
 }
