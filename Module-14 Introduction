@@ -1,0 +1,9 @@
+React Performanace Optimization
+--------------------------------
+1. react memoization: Use React.memo to prevent unnecessary re-renders of functional components when their props haven't changed.
+2. useCallback and useMemo: Use useCallback to memoize functions and useMemo to memoize expensive calculations, preventing them from being recalculated on every render.
+3. Code splitting: Use dynamic imports and React.lazy to split your code into smaller chunks, allowing for faster initial load times and better performance.
+
+lazy loading images: Implement lazy loading for images to improve page load times and reduce the initial load size, especially for pages with many images. 
+
+code splitting and lazy loading: Combine code splitting with lazy loading to load components and images only when they are needed, further enhancing performance.
